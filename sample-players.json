@@ -1,0 +1,38 @@
+{ "players": [{
+    "name": "shin*ramen",
+    "role": "Leader",
+    "highestTrophies": 4500,
+    "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t31.0-8/11416331_10153264978910935_2370335380787350973_o.jpg?oh=9ef2d714e0d8174712a49e4af92946e7&oe=59E7F22A"
+    }, {
+    "name": "Bagel",
+    "role": "Co-Leader",
+    "highestTrophies": 4900,
+    "image": "http://newsdesk.si.edu/sites/default/files/imagecache/photo_pagewidth/photos/anonymous_silhouette.jpg"
+    }, {
+    "name": "Zed",
+    "role": "Member",
+    "highestTrophies": 4955,
+    "image": "http://newsdesk.si.edu/sites/default/files/imagecache/photo_pagewidth/photos/anonymous_silhouette.jpg"
+    },{
+    "name": "Saungchi",
+    "role": "Elder",
+    "highestTrophies": 4292,
+    "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t31.0-8/15000797_10105931102549753_8575772696759646788_o.jpg?oh=47188c185af41105f36c717e76f0602c&oe=599C2044"
+    },{
+    "name": "fr3dman",
+    "role": "Elder",
+    "highestTrophies": 4192,
+    "image": "https://scontent.flas1-1.fna.fbcdn.net/v/t1.0-9/18485395_10208673100894437_4261928602512324145_n.jpg?oh=33733ae61150856e304f1c766a4d7f4e&oe=59CD88D4"
+    },{
+    "name": "M272cels",
+    "role": "Elder",
+    "highestTrophies": 4114,
+    "image": "http://newsdesk.si.edu/sites/default/files/imagecache/photo_pagewidth/photos/anonymous_silhouette.jpg"
+    },{
+    "name": "paul",
+    "role": "Co-leader",
+    "highestTrophies": 4144,
+    "image": "http://newsdesk.si.edu/sites/default/files/imagecache/photo_pagewidth/photos/anonymous_silhouette.jpg"
+    }
+  ]
+}

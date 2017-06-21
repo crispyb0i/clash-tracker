@@ -1,0 +1,64 @@
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Player to The Dream Cream</h3>
+  </div>
+  <div>
+    <label>Player Name:</label>
+    <br>
+    <input #newName required>
+  </div>
+
+  <div>
+    <label>Player Image:</label>
+    <br>
+    <input #newImage>
+  </div>
+
+  <div>
+    <label>Player Role:</label>
+    <br>
+    <textarea #newRole required></textarea>
+  </div>
+
+  <div>
+    <label>Player's Highest Trophies:</label>
+    <br>
+    <textarea #newTrophies required></textarea>
+  </div>
+  <button type="button" (click)="submitForm(newName.value,newImage.value,newRole.value,newTrophies.value);newName.value='';newImage.value='';newRole.value='';newTrophies.value='';">Add</button>
+</div>
+
+  <button type="button" name="button" class btn btn-primary (click)="formHide()">Update Player(s)</button>
+
+<div *ngFor="let player of players | async" >
+  <img src={{player.image}}>
+  <h2>Name: {{player.name}} </h2>
+  <h2>Role: {{player.role}} </h2>
+  <h2>Highest Trophies: {{player.highestTrophies}}</h2>
+
+  <div *ngIf="showForm">
+    <h4>Edit Player</h4>
+
+    <label>Edit Player Name:</label>
+    <input [(ngModel)]="player.name">
+    <br>
+
+    <label>Edit Player Image:</label>
+    <input [(ngModel)]="player.image">
+    <br>
+
+    <label>Edit Player player:</label>
+    <input [(ngModel)]="player.role">
+    <br>
+
+    <label>Edit Player highestTrophies:</label>
+    <input [(ngModel)]="player.highestTrophies">
+    <br>
+
+    <button type="button" (click)="beginUpdatingPlayer(player)">Update</button>
+
+    <button type="button" (click)="beginDeletingPlayer(player)">Delete</button>
+  </div>
+</div>

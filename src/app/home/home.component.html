@@ -1,0 +1,14 @@
+<select (change)="onChange($event.target.value)">
+  <option value="All" selected="selected">All Players</option>
+  <option value="Leader">Leader</option>
+  <option value="Co-Leader">Co-Leader</option>
+  <option value="Elder">Elder</option>
+  <option value="Member">Member</option>
+</select>
+
+<div *ngFor="let player of players | async | role:filterByRole" (click)="goToDetailPage(album)" class="panel panel-default">
+  <a [routerLink]="['/player/' + player.$key]"><img src={{player.image}}></a>
+  <h2>Name: {{player.name}} </h2>
+  <h2>Role: {{player.role}}</h2>
+  <hr>
+  </div>
